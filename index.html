@@ -1,1801 +1,779 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9 ie8" lang="en" itemscope itemtype="http://schema.org/WebPage""> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie9 ie9" lang="en" itemscope itemtype="http://schema.org/WebPage""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js ie10plus" lang="en" itemscope itemtype="http://schema.org/WebPage"> <!--<![endif]-->
+<html lang="en">
 <head>
-<title>Good TV. Better TV. DIRECTV.</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<meta name="MSSmartTagsPreventParsing" content="TRUE" />
-<meta name="autosize" content="off" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="./public.css" />
-
-
-<script type="text/javascript" src="./prototype-concat.js"></script>
-<script type="text/javascript" src="./global.js"></script>
-<script type="text/javascript" src="./rollover.js"></script>
-<script type="text/javascript" src="./flashobject.js"></script>
-<script type="text/javascript" src="./mbox/mbox.js"></script>
-</head>
-<body onunload="killFlash();">
-<!-- homeLayout.html -->
-<div id="containerMain">
-
-
-<script type="text/javascript">
-// initialize the promo, initializePromo only after page is loaded - DO NOT REMOVE
-Event.observe(window, 'load', initializePromo, false);
-
-</script>
-
-<!-- DBUG
-SNAME:prdDTPW02A
-PID:ANON:890901627
-LID:550780858
-isPr:true
-isPe:false
-isC:false
--->
-<div id="containerHeader">
-
-<div id="containerHeaderLeft">
-
-<div id="headerMessages">
-<div class="headerMessagesContent">
-
-
-<img src="./spacer.gif" width="1" height="8" alt="" /><br />
-Existing Customer?  <a href="register.html" class="boldLink">Register</a>
-&#160;&#160;&#160;
-Already Registered?  <a href="login.html" class="boldLink">Login</a>
-
-
-</div>
-</div>
-
-</div>
-<div id="containerHeaderRight">
-<div id="headerSearch">
-<div class="headerSearchLeft"><img src="./header_search_leftcap.gif" alt="" width="8" height="30" /></div>
-<div class="headerSearchContent">
-<form action="./searchForm" name="searchForm" method="post"><input value="ISO-8859-1" type="hidden" name="_dyncharset"./></input><input value="" tabindex="1" maxlength="100" type="text" class="search" onfocus="if (this.value == 'Search') this.value='';" size="18" name="searchText" onblur="if (this.value == '') this.value = 'Search';"./><input value=" " type="hidden" name="_D:searchText"./><input value=" " type="hidden" name="_D:dbMatch"></input><select class="option" name="dbMatch"><option value="EntireSite">Entire Site</option>
-<option value="SITEPAGES">Content</option>
-<option value="FAQ">FAQs</option>
-<option value="EPG">TV &amp; Pay Per View</option>
-</select><input type="image" class="formTech" src="./header_search_button.gif" alt="Search" name="homeSearch"./><input value=" " type="hidden" name="_D:homeSearch"./><input value="" type="hidden" alt="homeSearch" name="homeSearch"./><input value=" " type="hidden" name="_D:homeSearch"./><input type="hidden" name="sp-a" class="search" value=" Search" onfocus="if (this.value == ' Search') this.value='';" onblur="if (this.value == '') this.value = ' Search';"./>
-<input type="hidden" name="server" value="http://www.directv.com" />
-<input type="hidden" name="secureserver" value="https://www.directv.com" />
-<input type="hidden" name="path" value="glb" />
-<input type="hidden" name="page" value="Search.html" />
-<input type="hidden" name="assetcount" value="5" />
-<input type="hidden" name="login" value="0" />
-<input type="hidden" name="home" value="0" />
-<input value="./layout/component/topnav.html.searchForm" type="hidden" name="_DARGS"./></input></form><script type="text/javascript">
-<!--
-if (document.searchForm.searchText.value == '') {
-document.searchForm.searchText.value = 'Search';
+<meta name="google-site-verification" content="" />
+<link rel="canonical" href="http://www.tbs.com/">
+<link href="" rel="publisher" />
+<title>Watch Funny TV Shows and Movies on tbs</title>
+<meta name="description" content="Explore the best comedies on television at TBS.com! Don&amp;#039;t wait - watch your favorite very funny TV shows and movies any place, any time.">
+<meta name="keywords" content="comedy, watch TV, TBS, funny shows">
+<meta property="fb:admins" content="122534311112187" /> 
+<meta property="og:type" content="website" /> 
+<meta property="og:site_name" content="TBS" /> 
+<meta property="og:url" content="http://www.tbs.com" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="icon" type="image/ico" href="/images/favicon-tbs.ico" />
+<link rel="apple-touch-startup-image" href="/images/splash.jpg">
+<link rel="apple-touch-icon" href="/images/TBSicon_Big.png">
+<link rel="shortcut icon" sizes="196x196" href="/images/TBSicon_Big.png">
+<link rel="shortcut icon" sizes="128x128" href="/images/TBSicon_Big.png">
+<script>
+(function() {
+if (window.location.hash.length>2) {
+var url = window.location.hash.substring(1);
+if (url.charAt(0)!=='/') {
+url += '/';
 }
-// -->
-</script>
-</div>
-</div>
-</div>
-
-
-</div>
-
-<div id="containerCustomerHeader">
-
-<div class="customerMenuContainer">
-<div style="text-align:right; font-size: 11px; color: #e5e5e5;line-height:18px">Order Now 1-888-777-2454</div>
-</div>
-
-</div>
-
-
-<div id="contentMain">
-<div id="containerRight">
-
-
-
-
-
-
-
-
-
-<div class="module176">
-
-<h3>Order Online Today!</h3>
-<div class="copy">
-
-
-
-<div class="promoImage"><a href="./contentPageNR.html?assetId=2700001&amp;CMP=ILC-Q407-RHR-12-31updates"><img src="./assets/home/RHR_Q108_order_online_150ch_39.2.jpg" alt=""></a></div>
-
-
-</div>
-
-</div>
-<br />
-
-
-<div class="module176">
-
-<h3>Get the Best in HD</h3>
-<div class="copy">
-
-
-
-<div class="promoImage"><a href="./contentPageNR.html?assetId=P4380110&amp;CMP=ILC-RHR-HD-Beyonce"><img src="./assets/home/RHR_upgradeToHD_rhr.v02.jpg" alt=""></a></div>
-
-
-</div>
-
-</div>
-<br />
-
-
-<div class="module176">
-
-<h3>NASCAR HotPass</h3>
-<div class="copy">
-
-
-
-<div class="promoImage"><a href="./contentPageNR.html?assetId=P4200058&amp;CMP=ILC-Q108-RHR-NASCAR"><img src="./assets/home/RHR_Q108_nascar_3a.gif" alt=""></a></div>
-
-
-</div>
-
-</div>
-<br />
-
-<br/>
-
-
-
-</div>
-<div id="containerLeft">
-<div id="containerLeftnav">
-
-<div id="logoNav">
-<div id="logocontent">
-<a href="./index.html"><img src="./dtv_logo_3D.jpg"./></a>
-</div>
-</div>
-
-
-<script type="text/javascript">
-<!--
-var activeAccordion = -1;
-// -->
-</script>
-<div id="nav_accordion_container">
-
-
-
-
-<div class="topNav"><img src="./spacer.gif" alt="" width="160" height="3" /><a href="#">Order Now</a></div>
-
-
-<h3 class="nav_accordion_toggle topNav"><img src="./spacer.gif" alt="" width="160" height="3" />Packages</h3>
-<div class="nav_accordion_content" style="display:none">
-<img src="./spacer.gif" alt="" width="160" height="3" />
-
-
-<div id="subnav_accordion_container0">
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">English</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=3180001">Browse Packages</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./comparePackages.html?assetId=900042">Compare Packages</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./localChannels.html?assetId=900018">Local Channels</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=3290001">Regional Sport Networks</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Spanish </a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./comparePackages.html?assetId=3290010">Compare Packages</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=3220006">Programming News</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-</div>
-<script type="text/javascript">
-<!--
-Event.observe('nav_accordion_container', 'dtv:navAccordionOpened', function() { initializeSubNavAccordion('subnav_accordion_container0', -1) }, false);
-// -->
-</script>
-<img src="./spacer.gif" alt="" width="160" height="3" />
-</div>
-
-
-
-
-
-<div class="topNav"><img src="./spacer.gif" alt="" width="160" height="3" /><a href="./contentPageNR.html?assetId=900022">Receivers</a></div>
-
-
-<h3 class="nav_accordion_toggle topNav"><img src="./spacer.gif" alt="" width="160" height="3" />Premium Channels </h3>
-<div class="nav_accordion_content" style="display:none">
-<img src="./spacer.gif" alt="" width="160" height="3" />
-
-
-<div id="subnav_accordion_container1">
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1200078">HBO<sup>&reg;</sup></a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1200079">Starz<sup>&reg;</sup> Super Pack</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1200080">SHOWTIME UNLIMITED<sub>&reg;</sub></a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1200081">Cinemax<sup>&reg;</sup></a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1200082">SPORTS PACK</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=1200083">BabyFirstTV&trade;</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=3060016">Game Lounge </a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPageNR.html?assetId=3320014">Playboy TV</a></div>
-
-
-
-</div>
-<script type="text/javascript">
-<!--
-Event.observe('nav_accordion_container', 'dtv:navAccordionOpened', function() { initializeSubNavAccordion('subnav_accordion_container1', -1) }, false);
-// -->
-</script>
-<img src="./spacer.gif" alt="" width="160" height="3" />
-</div>
-
-
-
-
-<h3 class="nav_accordion_toggle topNav"><img src="./spacer.gif" alt="" width="160" height="3" />International Channels</h3>
-<div class="nav_accordion_content" style="display:none">
-<img src="./spacer.gif" alt="" width="160" height="3" />
-
-
-<div id="subnav_accordion_container2">
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=2980007">Arabic</a></div>
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Brazilian</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3220007">BrazilianDirect&trade; I</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3220008">BrazilianDirect&trade; II</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3220009">BrazilianDirect&trade; III</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3220010">BrazilianDirect&trade; IV</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3260006">TV Globo</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3260008">PFC</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="./secondaryIndex.html?assetId=3240010">Caribbean</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3240009">CaribbeanDirect&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3240008">Caribvision</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3240007">HYPE TV</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Chinese</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200044">Jadeworld</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200045">MandarinDirect&trade; II</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3230001">MandarinDirect&trade; III</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Filipino</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200046">TFCDirect&trade; </a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200047">FilipinoDirect&trade; </a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Greek</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3200003">GreekDirect&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3320001">GreekDirect&#8482;II</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3200001">MEGA Cosmos</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3200002">Alpha Sat</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3310019">Alter Globe </a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Italian</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200048">SKY TG24</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200049">CalcioDirect&trade;</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Korean</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200050">KoreanDirect&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200051">CTS</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Polish</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=2980010">PolishDirect&trade; I</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=2980011">PolishDirect&trade; II</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Russian</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200052">RussianDirect&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200053">RTR Planeta</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200054">Channel 1 Russia (C1RW)</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">South Asian</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=2980003">FILMY</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200035">HindiDirect&trade; </a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=2980002">HindiDirect&trade; II</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200036">AASTHA </a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200039">TeluguDirect&trade; </a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200040">TamilDirect&trade; </a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200042">NDTV </a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=1200043">BanglaDirect&trade;</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1200034">Ukrainian</a></div>
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Vietnamese</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3170001">VietnameseDirect&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./channelChart2.html?assetId=3170002">VietnameseDirect&trade; III</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=3050004">Bonus International </a></div>
-
-
-
-</div>
-<script type="text/javascript">
-<!--
-Event.observe('nav_accordion_container', 'dtv:navAccordionOpened', function() { initializeSubNavAccordion('subnav_accordion_container2', -1) }, false);
-// -->
-</script>
-<img src="./spacer.gif" alt="" width="160" height="3" />
-</div>
-
-
-
-
-<h3 class="nav_accordion_toggle topNav"><img src="./spacer.gif" alt="" width="160" height="3" />Sports Subscriptions</h3>
-<div class="nav_accordion_content" style="display:none">
-<img src="./spacer.gif" alt="" width="160" height="3" />
-
-
-<div id="subnav_accordion_container3">
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">NASCAR</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=3060005">NASCAR HotPass&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=3220005">HOTPASS Zone</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=3310002">Schedule</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">NFL</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=900044">NFL Sunday Ticket&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=900045">NFL Super Fan&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=3260001">NFL Supercast&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=1800006">Schedule</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=900046">Blackout Restrictions</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100028">Renewal </a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">NHL</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=1100047">NHL Center Ice&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=1800012">Schedule</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100049">Blackout Restrictions</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=3310001">Renewal</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">NBA</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=1000008">NBA League Pass&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=1800008">Schedule</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=3300003">Broadband</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1000009">Blackout Restrictions</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100032">Renewal</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">College Basketball</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=1100035">ESPN FULL COURT</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=1800009">Schedule</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100037">Blackout Information</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=3310007">Renewal </a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=1100039">MEGA MARCH MADNESS</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=1800010">Schedule</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100041">Blackout Information</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100042">Renewal</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">College Football</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=1000006">ESPN GamePlan&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=1800007">Schedule </a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1000007">Blackout Restrictions</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100031">Renewal</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">MLB</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=3180002">MLB Extra Innings&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=3160004">Schedule</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100045">Blackout Restrictions</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100046">Renewal</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Soccer & Rugby</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=1100055">MLS DirectKick&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageIF.html?assetId=1800013">Schedule</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100058">Blackout Restrictions</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100059">Renewal</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=1100075">Setanta Sports&trade;</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Cricket Sport</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1100076">CricketTicket</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1100069">SPORTS PACK</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPageIF.html?assetId=800009">Schedules</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPageIF.html?assetId=3290001">Regional Sport Networks</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPageIF.html?assetId=3320008">Blackout Games</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./customer/faqPage.html?assetId=3330004">FAQ's</a></div>
-
-
-
-</div>
-<script type="text/javascript">
-<!--
-Event.observe('nav_accordion_container', 'dtv:navAccordionOpened', function() { initializeSubNavAccordion('subnav_accordion_container3', -1) }, false);
-// -->
-</script>
-<img src="./spacer.gif" alt="" width="160" height="3" />
-</div>
-
-
-
-
-<h3 class="nav_accordion_toggle topNav"><img src="./spacer.gif" alt="" width="160" height="3" />Pay Per View</h3>
-<div class="nav_accordion_content" style="display:none">
-<img src="./spacer.gif" alt="" width="160" height="3" />
-
-
-<div id="subnav_accordion_container4">
-
-
-
-
-
-<div class="subNav"><a href="./payPerViewMovies.html?assetId=1100099">Movies: View All</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./highlights.html?assetId=1100097">Movies: New Releases</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./highlights.html?assetId=1100103">Events</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1200002">Adult</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./secondaryIndex.html?assetId=1200003">Special Offers</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./mydirectv/ppv/order/orderPayPerView1.html">Order Now</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=1100096">Guide to Pay Per View</a></div>
-
-
-
-</div>
-<script type="text/javascript">
-<!--
-Event.observe('nav_accordion_container', 'dtv:navAccordionOpened', function() { initializeSubNavAccordion('subnav_accordion_container4', -1) }, false);
-// -->
-</script>
-<img src="./spacer.gif" alt="" width="160" height="3" />
-</div>
-
-
-
-
-<h3 class="nav_accordion_toggle topNav"><img src="./spacer.gif" alt="" width="160" height="3" />DIRECTV Exclusive</h3>
-<div class="nav_accordion_content" style="display:none">
-<img src="./spacer.gif" alt="" width="160" height="3" />
-
-
-<div id="subnav_accordion_container5">
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">The 101</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=1200005">Overview</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=3290009">Passions</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=2980016">Project MyWorld&trade;</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=2950001">Championship Gaming</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPageNR.html?assetId=3290012">Concerts</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=3150001">Channel 103</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=2960016">The Scorsese Selection</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=2950004">The Maltin Minute</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./channelChart2.html?assetId=1200006">XM Satellite Radio</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=1200065">Interactive Channels</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=900029">ACCESS DIRECTV&#8482;</a></div>
-
-
-
-</div>
-<script type="text/javascript">
-<!--
-Event.observe('nav_accordion_container', 'dtv:navAccordionOpened', function() { initializeSubNavAccordion('subnav_accordion_container5', -1) }, false);
-// -->
-</script>
-<img src="./spacer.gif" alt="" width="160" height="3" />
-</div>
-
-
-
-
-<h3 class="nav_accordion_toggle topNav"><img src="./spacer.gif" alt="" width="160" height="3" />Customer Service</h3>
-<div class="nav_accordion_content" style="display:none">
-<img src="./spacer.gif" alt="" width="160" height="3" />
-
-
-<div id="subnav_accordion_container6">
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=1100070">Contact Us</a></div>
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">Troubleshooting</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./secondaryIndex.html?assetId=1100063">Understanding  My Bill</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=900007">Parental Controls</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./equipment/demoInfo.html?assetId=1300001">Remote Control</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=500013">Your Installation</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./secondaryIndex.html?assetId=1900004">Channel Trouble</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./secondaryIndex.html?assetId=1900006">Signal and Picture</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./secondaryIndex.html?assetId=1900005">On-Screen Messages</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1300005">Pay Per View</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=2900001">Avoiding E-mail Fraud</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./contentPage.html?assetId=1300006">Using directv.com</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=1100061">Moving?</a></div>
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="">FAQs</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./customer/faqPage.html?assetId=1100115">Basics</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./customer/faqPage.html?assetId=3290011">HD</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./customer/faqPage.html?assetId=1100116">Equipment</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./customer/faqPage.html?assetId=1300024">Programming</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./customer/faqPage.html?assetId=1300026">Sports</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./customer/faqPage.html?assetId=1300028">Tech Support</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./customer/faqPage.html?assetId=1300029">Using directv.com</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./customer/faqPage.html?assetId=1300021">Billing</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<h3 class="subnav_accordion_toggle subNav"><a href="./secondaryIndex.html?assetId=1100053">Demos & How-To</a></h3>
-<div class="subnav_accordion_content" style="display:none">
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./secondaryIndex.html?assetId=1100077">Equipment</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./secondaryIndex.html?assetId=1100079">On-Screen Guide</a></li></ul></div>
-
-
-
-
-<div class="grandchildNav"><ul><li class="navListItem"><a href="./secondaryIndex.html?assetId=1100080">Using directv.com</a></li></ul></div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="subNav"><a href="./myaccounthelp">Online Assistant</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="http://forums.directv.com/pe/index.html">Technical Help Forums</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./customer/downloadPage.html?assetId=1100066">System Manuals</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPageIF.html?assetId=3290007">Rebate Center</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=3310015">Protection Plan</a></div>
-
-
-
-
-
-
-
-<div class="subNav"><a href="./contentPage.html?assetId=900008">Referral Program</a></div>
-
-
-
-</div>
-<script type="text/javascript">
-<!--
-Event.observe('nav_accordion_container', 'dtv:navAccordionOpened', function() { initializeSubNavAccordion('subnav_accordion_container6', -1) }, false);
-// -->
-</script>
-<img src="./spacer.gif" alt="" width="160" height="3" />
-</div>
-
-
-
-
-
-<div class="topNav"><img src="./spacer.gif" alt="" width="160" height="3" /><a href="./mydirectv/account/myAccount.html">My Account </a></div>
-
-</div>
-
-<div id="tvListingNav"><a href="./epg/theGuide.html"><div class="tvListingButton"></div></a></div>
-<div class="clear">&nbsp;</div>
-
-<div id="newNav">
-<div class="newNavTop"></div>
-<div class="newNavContent">
-
-<a href="./contentPageNR.html?assetId=P4380110">DIRECTV HD</a><br/>
-
-
-<a href="http://directv.feedroom.com/">Video Lounge</a><br/>
-
-
-<a href="./contentPage.html?assetId=P4200028">Latest News</a><br/>
-
-
-<a href="./contentPage.html?assetId=3320009">DIRECTV Rewards</a><br/>
-
-
-<a href="./discover/broadbandBundle.html">High-Speed Internet</a><br/>
-
-
-
-
-
-
-</div>
-<div class="newNavBottom"></div>
-</div>
-
-<div class="clear">&nbsp;</div>
-<div class="module176">
-<h3>Sign up For Emails</h3>
-<div class="copy">
-<ul id="default">
-Hear about new DIRECTV products, exclusive sales &amp; special offers.
-</ul>
-<ul id="success">
-<div align="center"><b>Thank you</b><br/></div>
-You have been added to our email list. For customized offers, tell us your preferences (optional).<br/><br/>
-<div align="center">
-<a href="#" onclick="return emailSignupPopup();"><img
-src="./btn_20_update_preferences_off.gif" alt="Update Preferences"./></a>
-</div>
-</ul>
-<ul id="validation">
-There was a problem with your submission. Please try again.
-</ul>
-<ul id="error">
-Error while saving email, please try again later.
-</ul>
-<ul id="fr">
-<form class="formTech" name="signupForm" action="get">
-<input id="emailField" type="text" size="15" value="Email Address"
-onfocus="if(this.value=='Email Address') this.value = ''"
-onblur="if(this.value=='') this.value = 'Email Address'"
-onkeypress="if(event.keyCode == 13){ saveEmail(); return false;};"./>
-&nbsp;<span id="load"><img src="./ajax-loader.gif"./></span><span
-id="go"><a href="#" onClick="saveEmail();"><img
-src="./btn_16_go_off.png" alt="Go"./></a></span>
-</form>
-</ul>
-<ul id="customers" style="font-size:11px;margin-top:5px;">
-Existing customer? <a href="./mydirectv/account/myAccount.html">Log in</a>
-</ul>
-</div>
-<script type="text/javascript">
-<!--
-if ($('load')) $('load').toggle();
-if ($('error')) $('error').hide();
-if ($('validation')) $('validation').hide();
-if ($('success')) $('success').hide();
-// -->
-</script>
-</div>
-
-</div>
-<script type="text/javascript">
-<!--
-initializeNavAccordion('nav_accordion_container', activeAccordion);
-// -->
-</script>
-
-
-</div>
-
-<noscript>
-<div class="noscript-warning">
-directv.com will not function properly with Javascript disabled.  Please enable Javascript in your browser.
-</div>
-</noscript>
-<div id="containerMid">
-<!-- fires off a JMS event that a prospect home page was viewed..-->
-<!-- this will allow all scenarios listening to this event can fill slots -->
-
-
-<div id="prospectFlashContainer">
-<div id="flashcontent">
-<p class="noflash"><strong>Please update your browser plug-ins.</strong><br />
-Install the flash plug-in to enjoy the full experience of DIRECTV.com.<br />
-<a href="http://www.macromedia.com/go/gnavtray_dl_flashpl" class="more">Download Flash</a></p>
-</div>
-<script type="text/javascript">
-
-var fo = new FlashObject("./filmstrip.swf?lmt=2008-01-01T22%3A51%3A13.405Z", "mymovie", "568", "372", "7", "");
-fo.addParam("wmode", "transparent");
-fo.write("flashcontent");
-</script>
-</div>
-<div id="insideMid">
-
-
-
-
-
-
-<div class="floatWrapper columns3">
-<!-- each moduleHdr should have a matching moduleContent and moduleLink. example moduleHdr with id="hdr1" should have the same link as moduleContent with id="content1"
-and moduleLink with id="link1" -->
-<h2 class="mod" id="hdr1">
-<a href="./wizard/buildYourSystem1.html?CMP=ILC-Q207-HPtext-Calculate">Calculate Your Cost</a>
-</h2>
-<h2 class="mod" id="hdr2">
-<a href="./contentPageNR.html?assetId=P4380050">Discover DIRECTV</a>
-</h2>
-<h2 class="mod" id="hdr3">
-<a href="./login/loginProspect.html?CMP=ILC-Q207-HPtext-Customer">Already a Customer?</a>
-</h2>
-<div class="clear">&nbsp;</div>
-<div class="moduleContent mod" id="content1">
-<!-- @cms: insert module blurb for 1st item -->
-<p>See how much you'll save when you make the switch.
-<style type="text/css">
-.roundedBottom {
-background:none;
-height:0px;
+window.location.href = url;
 }
-#insideMid {
-    background-image:url(./assets/home/hpLinks_bg.gif);
+}());
+</script>
+<style>
+#screen-splash {
+background-repeat:no-repeat;
+background-position:center; 
+background-color: black;
+position: fixed;
+z-index: 100000;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
 }
 </style>
-<!-- Start of DoubleClick Spotlight Tag: Please do not remove-->
-<!-- Activity Name for this tag is:DirecTV Homepage -->
-<!-- Web site URL where tag should be placed: http://www.directv.com -->
-<!-- This tag must be placed within the opening <body> tag, as close to the beginning of it as possible-->
-<!-- Creation Date:7/27/2007 -->
-<SCRIPT language="JavaScript">
-var axel = Math.random()+"";
-var a = axel * 10000000000000;
-document.write('<IMG SRC="http://ad.doubleclick.net/activity;src=1478707;type=direc041;cat=direc801;ord='+ a + '?" WIDTH=1 HEIGHT=1 BORDER=0>');
-</SCRIPT>
-<NOSCRIPT>
-<IMG SRC="http://ad.doubleclick.net/activity;src=1478707;type=direc041;cat=direc801;ord=1?" WIDTH=1 HEIGHT=1 BORDER=0>
-</NOSCRIPT>
-<!-- End of DoubleClick Spotlight Tag: Please do not remove--></p>
+<style>
+#screen-splash {
+background-image:url('/images/TBS_300x300.png'); 
+}
+</style>
+<link href="/bootstrap.min.css" rel="stylesheet"></link>
+<link href="/font-awesome.css" rel="stylesheet"></link>
+<link href="/fonts-tbs.css" rel="stylesheet"></link>
+<link href="/tbs.css" rel="stylesheet"></link>
+<script>
+window.siteDefaults = {
+name: 'TBS',
+liveLoc: 'watchtbs',
+defaultTitle: 'Watch TV Shows and Movies on tbs',
+serviceDomain: 'http://www.tbs.com/service',
+splash: {
+web: '/images/tbs-logo.json?v=4',
+mobile: '/images/tbs-logo-mobile.json?v=4'
+}, 
+feeds: {
+kindle: 'http://www.amazon.com/Turner-Entertainment-Networks-WATCH-Kindle/dp/B00BI60DMU',
+androidTablet: 'https://play.google.com/store/apps/details?id=com.turner.tbs',
+androidPhone: 'https://play.google.com/store/apps/details?id=com.turner.tbs.android.networkapp&hl=en',
+ipadStore: 'itms://itunes.apple.com/us/app/watch-tbs-for-ipad/id462780547?mt=8',
+ipadProtocol: 'tbsapp://open',
+iphoneStore: 'itms://itunes.apple.com/us/app/watch-tbs/id385618916?mt=8',
+iphoneProtocol: 'tbsiphone://open'
+},
+liveTV: {
+ssidEast: 'tbs.com_desktop_live_east',
+ssidWest: 'tbs.com_desktop_live_west',
+videoFeedEast: 1020219,
+videoFeedWest: 1020220 
+}
+}; 
+</script>
+<script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_zdxBboMaaZXArHl2Y_hTTXId-N86KpYljdRIGubrW9VFGumK72whdb4GAVn8sjpj"> 
+{
+autoLogin: true,
+siteName: 'tbs.com',
+sessionExpiration: -2,
+enabledProviders: 'facebook,twitter,googleplus,google,linkedin,yahoo,microsoft,aol'
+}
+</script>
+<script type="text/javascript" src="/modernizr.js"></script>
+<!--[if lt IE 9]>
+<script src="http://i.cdn.turner.com/v5cache/TBS/js/html5shiv.js"></script>
+<script src="/respond.js"></script>
+<![endif]-->
+<script type="text/javascript" src='http://i.cdn.turner.com/analytics/tbs/ais.js'></script>
+<script type="text/javascript" src='http://i.cdn.turner.com/ads/tbs/adfuel.js'></script>
+<script>
+/* Snippets in ad_controller reused here since they are used in our code */
+var viewport_width = window.innerWidth || document.documentElement.offsetWidth || document.documentElement.clientWidth || document.body.clientWidth,
+ad_page_mode = "TABLET_OR_DESKTOP";
+if (viewport_width < 601){
+ad_page_mode = "MOBILE"
+}
+force_new_cnnad_transactionID = function(){};
+/* End snippets */
+</script>
+</head>
+<body>
+<!-- Modal -->
+<div class="modal fade" id="modal-insert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+<span class="glyphicon glyphicon-remove-sign white"></span>
+</button>
 </div>
-<div class="moduleContent mod" id="content2">
-<!-- @cms: insert module blurb for 2nd item -->
-<p>If you want the best in television, DIRECTV is your only choice. Learn why.</p>
+<div id="modal-page"></div>
 </div>
-<div class="moduleContent mod" id="content3">
-<!-- @cms: insert module blurb for 3rd item -->
-<p>Log in to pay your bill, order Pay Per View and more.</p>
+<!-- /.modal-content -->
 </div>
-<div class="clear">&nbsp;</div>
-<div class="mod homeModuleLink" id="link1">
-<!-- @cms: insert more link for 1st item -->
-<a href="" class="more"></a>
-<a href="" class="more"></a>
+<!-- /.modal-dialog -->
 </div>
-<div class="mod homeModuleLink" id="link2">
-<!-- @cms: insert more link for 2nd item -->
-<a href="" class="more"></a>
-<!-- @cms: insert more link for 2nd item -->
-<a href="" class="more"></a>
+<!-- /.modal -->
+<!-- Wrap all page content here -->
+<div id="wrap">
+<!-- Google Tag Manager --> 
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NL2442"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NL2442');</script>
+<!-- End Google Tag Manager -->
+<div id="screen-splash"></div>
+<div id="modal-back-btn"></div>
+<!-- Modal -->
+<div class="modal fade" id="mobile-app-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="transparent-overlay"></div> -->
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+</button>
 </div>
-<div class="mod homeModuleLink" id="link3">
-<!-- @cms: insert more link for 3rd item -->
-<a href="" class="more"></a>
-<!-- @cms: insert more link for 3rd item -->
-<a href="" class="more"></a>
+<div class="row">
+<div class="content-wrapper">
+<a class='download'>
+<div class="text">Want to watch episodes, movies, and live TV?</div>
+<div class="watch-on-app">
+<div>Watch on the App</div>
 </div>
-<div class="clear">&nbsp;</div>
-</div><!-- end floatWrapper -->
-</div>
-<a href="./contentPageNR.html?assetId=2700001&CMP=ILC-Q42007-Bottom-Rail">
-<img src="./assets/home/BR_Q407-J1.jpg"  width="568" alt="./assets/home/BR_Q407-J1.jpg" /><br/></a>
-<div class="roundedBottom"></div>
-
-</div>
-<div class="module176 lowModule rightModule">
-
-</div>
-<div class="clear"></div>
+</a>
 </div>
 </div>
-
-<div id="containerFooter">
-<div id="footerNav">
-<div class="footerNavLeft"><img src="./footer_left.gif" alt="" width="6" height="23" /></div>
-<div class="footerNavContent">
-<a href="./secondaryIndex.html?assetId=1400007" class="linkGrey">About Us</a> |
-<a href="./customer/howToReachUs.html" class="linkGrey">Contact Us</a> |
-<a href="http://phx.corporate-ir.net/phoenix.zhtml?c=127160&p=irol-IRHome" class="linkGrey">Investors</a> |
-<a href="./secondaryIndex.html?assetId=1400038" class="linkGrey">Careers</a> |
-<a href="./findRetailer.html?assetId=1400028" class="linkGrey">Find Retailer</a> |
-<a href="./secondaryIndex.html?assetId=1400020" class="linkGrey">Business</a> |
-<a href="./secondaryIndex.html?assetId=1400044" class="linkGrey">Residential Buildings</a> |
-<a href="./contentPage.html?assetId=1200069" class="linkGrey">Boats</a> |
-<a href="./contentPage.html?assetId=1200067" class="linkGrey">Cars</a> |
-<a href="./contentPage.html?assetId=1200070" class="linkGrey">RVs</a> |
-<a href="./contentPage.html?assetId=1400030" class="linkGrey">Airplanes</a> |
-<a href="./sitemap/sitemapVisual.html" class="linkGrey">Site Map</a> |
-<a href="http://www.directvrebatesettlement.com/" class="linkGrey">Prime TV Notice</a> |
-<a href="./contentPage.html?assetId=P400044" class="linkGrey">Privacy Policy</a> |
-<a href="./secondaryIndex.html?assetId=P400036" class="linkGrey">Legal</a> |
-<a href="./contentPage.html?assetId=P500012" class="linkGrey">T&amp;C</a>
 </div>
-<div class="footerNavRight"><img src="./footer_right.gif" alt="" width="6" height="23" /></div>
 </div>
-<div id="footerCopyright">&copy;2008 DIRECTV, Inc.</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-<!--WEBSIDESTORY CODE HBX2.0 (Universal)-->
-<!--COPYRIGHT 1997-2005 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
-<script language="javascript" type="text/javascript">
+<!-- /.modal -->
+<!-- Modal -->
+<div class="modal fade" id="welcome-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="transparent-overlay"></div> -->
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+</button>
+</div>
+<div class="welcome-content container-fluid">
+<div class="row">
+<div class="top col-xs-12">
+<div class="hdr1">For the best experience ...</div>
+<div class="subhdr1"><div class="createlink create">Create a Profile</div> to access these convenient features. (It only takes seconds.)</div>
+</div>
+<div class="midleft col-xs-6 col-sm-7 col-lg-7" > 
+<div class="items">
+<div class="item">Resume episodes and movies across multiple devices</div>
+<div class="item">Track your viewing history</div>
+<div class="item last">Receive email updates on new features</div>
+</div>
+<span class="bigview">
+<div class="legaltxt">By using this site, you agree to TBS's updated <span class="termslink">Terms of Use</span> and <span class="privacylink">Privacy Policy</span>.</div> 
+<div class="create-profile">
+<div class="create create-button"><span>Create a profile</span></div>
+<div class="later cancel">I'll do this later</div>
+</div>
+</span>
+</div>
+<div class="midright col-xs-12 col-sm-5 col-lg-5"><img data-standard="/images/welcome-tbs.png" data-retina="/images/welcome-tbs-retina.png" class="loadimage" /></div>
+<span class="smallview">
+<div class="bottom col-xs-12">
+<div class="legaltxt">By using this site, you agree to TBS's updated <span class="termslink">Terms of Use</span> and <span class="privacylink">Privacy Policy</span>.</div> 
+<div class="create-profile">
+<div class="create create-button"><span>Create a profile</span></div>
+<div class="later cancel">I'll do this later</div>
+</div>
+</div>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.modal -->
+<!-- Modal -->
+<div class="modal fade" id="continue-watching-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="transparent-overlay"></div> -->
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+</div>
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+<h1>Want to finish later?</h1>
+<p>You can continue watching this video later.</p>
+<p>Just <span class="create-profile">Create a profile</span> and we'll remember where you stopped.</p>
+<button class="btn logIn">Create a profile</button><br>
+<input type="checkbox" id="hide-watch-later"><p class="hide-watch-later"> Don't show me this message again.</p>
+</div>
+<div class="col-sm-3"></div>
+</div>
+</div>
+</div>
+<!-- /.modal -->
+<!-- Modal -->
+<div class="modal fade" id="mobile-360video-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="transparent-overlay"></div> -->
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+</button>
+</div>
+<div class="row">
+<div class="content-wrapper">
+<a class='download'>
+<div class="text">To enjoy this experience on your mobile device, you'll need the</div>
+<div class="watch-360-app">
+<div>im360 App</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.modal -->
 <!--
-var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
-var hbx=_hbEvent("pv");hbx.vpc="HBX0200u";hbx.gn="a.directv.com";
-//BEGIN EDITABLE SECTION
-//CONFIGURATION VARIABLES
-hbx.acct="DM530702JBCD71EN3";//ACCOUNT NUMBER(S)
-hbx.pn="";//PAGE NAME(S)
-hbx.mlc="";//MULTI-LEVEL CONTENT CATEGORY
-hbx.pndef="title";//DEFAULT PAGE NAME
-hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
-//OPTIONAL PAGE VARIABLES
-//ACTION SETTINGS
-hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
-hbx.lt="auto";//LINK TRACKING
-hbx.dlf="n";//DOWNLOAD FILTER
-hbx.dft="n";//DOWNLOAD FILE NAMING
-hbx.elf="n";//EXIT LINK FILTER
-//SEGMENTS AND FUNNELS
-hbx.seg="";//VISITOR SEGMENTATION
-hbx.fnl="";//FUNNELS
-//CAMPAIGNS
-hbx.cmp="";//CAMPAIGN ID
-hbx.cmpn="";//CAMPAIGN ID IN QUERY
-hbx.dcmp="";//DYNAMIC CAMPAIGN ID
-hbx.dcmpn="";//DYNAMIC CAMPAIGN ID IN QUERY
-hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
-hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
-hbx.hra="";//RESPONSE ATTRIBUTE
-hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
-hbx.hqsp="ATT";//RESPONSE ATTRIBUTE IN QUERY
-hbx.hlt="";//LEAD TRACKING
-hbx.hla="";//LEAD ATTRIBUTE
-hbx.gp="";//CAMPAIGN GOAL
-hbx.gpn="";//CAMPAIGN GOAL IN QUERY
-hbx.hcn="";//CONVERSION ATTRIBUTE
-hbx.hcv="";//CONVERSION VALUE
-hbx.cp="null";//LEGACY CAMPAIGN
-hbx.cpd="";//CAMPAIGN DOMAIN
-//CUSTOM VARIABLES
-hbx.ci="";//CUSTOMER ID
-hbx.hc1="EXTERNAL";//CUSTOM 1
-hbx.hc2="";//CUSTOM 2
-hbx.hc3="";//CUSTOM 3
-hbx.hc4="";//CUSTOM 4
-hbx.hrf="";//CUSTOM REFERRER
-hbx.pec="";//ERROR CODES
-//INSERT CUSTOM EVENTS
-
-//END EDITABLE SECTION
-//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
-// -->
-</script><script language="javascript1.1" type="text/javascript" src="./hbx.js"></script>
-<!--END WEBSIDESTORY CODE-->
-
-
+BEGINNING OF HEADER COMPONENT
+-->
+<header>
+<nav>
+<div class="navbar navbar-inverse navbar-static-top" role="navigation" id="mainnav">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a pageId="page-landing" class="navbar-brand" href="/">
+<div class="main-logo"></div>
+</a>
+<a id="TNT-Switch" class="navbar-brand" href="http://www.tntdrama.com">
+<div class="main-logo-alt"></div>
+</a>
+</div>
+<!-- sign in area -->
+<div class="signin-wrapper">
+<div class="mvpd-logged-out tn-hidden">
+<a style="visibility:hidden;" data-toggle="tooltip" data-placement="bottom" title="Log in to view videos" href="#">Sign in to Watch TBS</a>
+</div>
+<div class="mvpd-logged-in tn-hidden" >
+<div class="co-branding"><div class="att"></div></div>
+<div class="user-info"><div></div></div>
+</div>
+<div data-toggle="tooltip" data-placement="bottom" title="Create a profile" class='gigya-login visible-logged-out logIn' href="#">My Profile</div>
+<div data-toggle="tooltip" data-placement="bottom" title="Edit the current user profile" class='editProfile tn-hidden'></div>
+<!-- <div data-toggle="tooltip" data-placement="bottom" title="Log Out" class='visible-logged-in logOut tn-hidden' href="#">
+<span class="glyphicon glyphicon-log-out"></span>
+</div> -->
+</div>
+<!-- /sign in area -->
+<div id="navmain" class="navbar-collapse collapse no-transition">
+<!-- 
+we will give identifying classes to each list item based on a required field in team site 
+(navitem-fieldvalue) to be used for custom css selection
+-->
+<ul class="slides nav navbar-nav navbar-right">
+<li class="navitem-shows"><a itemscope itemtype="http://schema.org/TVEpisode" itemprop="url" data-toggle="tooltip" data-placement="bottom" title="Shows Page" pageId="page-shows" href="/shows/"><span itemprop="name">Shows</span></a>
+</li>
+<li class="navitem-movies"><a itemscope itemtype="http://schema.org/TVEpisode" itemprop="url" data-toggle="tooltip" data-placement="bottom" title="Movies Page" pageId="page-movies" href="/movies/"><span itemprop="name">Movies</span></a>
+</li>
+<li class="navitem-live-tv"><a itemscope itemtype="http://schema.org/TVEpisode" itemprop="url" data-toggle="tooltip" data-placement="bottom" title="Watch Page" pageId="page-livetv" href="/watchtbs/"><span itemprop="name">Live TV</span></a>
+</li>
+<li class="navitem-schedule"><div itemscope itemtype="http://schema.org/TVEpisode" itemprop="url" data-toggle="tooltip" data-placement="bottom" title="Schedule Page" pageId="page-schedule"><span itemprop="name">Schedule</span></div>
+</li>
+<!--
+<li class="navitem-log-in"><a data-toggle="tooltip" data-placement="bottom" title="Log in to view videos" class="visible-logged-out logIn" href="#" data-toggle1="modal" data-target1="#login"><span>Log In</span></a>
+</li>
+-->
+<li class="hidden-xs navitem-glyphicon-search">
+<a title="Search" modal='1' href="/search.html" pageId="page-search">
+<span class="glyphicon glyphicon-search"></span>
+</a>
+</li>
+<li class="hidden-xs navitem-help"><a title="Help" href="/help.html" modal='1' pageId="page-help"><span>?</span></a></li>
+<li class="visible-xs navitem-search"><a title="Search" href="/search.html" modal='1' pageId="page-search"><span>Search</span></a></li>
+<li class="visible-xs navitem-help"><a title="Help" href="/help.html" modal='1' pageId="page-help"><span>Help</span></a></li>
+<li class="visible-xs navitem-login visible-logged-out"><a title="Profile access" href="#" modal='1' class="gigya-login logIn"><span>My Profile</span></a></li>
+<li class="visible-xs visible-logged-in"><a title="Edit the current user profile" href="#" class="editProfile noupdate">My Profile</a></li>
+<li class="visible-xs navitem-legal"><a title="Legal" href="/legal.html" modal='1' pageId="page-legal"><span>Legal</span></a></li>
+</ul>
+</div>
+<!--/.navbar-collapse -->
+</div>
+</div>
+</nav>
+</header> 
+<!--
+END OF HEADER COMPONENT
+-->
+<span id="headerAds">
+<div class="banner_ad shows_top">
+<div data-ad-wrapper="yes" class="" data-load-event-type="onLoad" id="myad-top-shows-ad" >
+<div id="ad_mod_2a4db4c88" data-src="http://i.cdn.turner.com/ads/tbs/singles/tbs_shows_main.js" class="epicAd"></div>
+</div>
+</div>
+<div class="banner_ad schedule_top">
+<div data-ad-wrapper="yes" class="" data-load-event-type="onLoad" id="myad-top-shows-ad" >
+<div id="ad_mod_7584803aa" data-src="http://i.cdn.turner.com/ads/tbs/singles/tbs_schedule.js" class="epicAd"></div>
+</div>
+</div>
+<div class="banner_ad home_top">
+<div data-ad-wrapper="yes" class="" data-load-event-type="onLoad" id="myad-top-home-ad" >
+<div id="ad_mod_91c2ae5ba" data-src="http://i.cdn.turner.com/ads/tbs/singles/tbs_homepage_mobile.js" class="epicAd"></div>
+</div>
+</div>
+</span>
+<!-- 
+div#page-landing is the div where the main landing content will be loaded into
+this should be the whole carousel
+-->
+<div class="page maincarousel carousel-loading" id="page-landing">
+<!-- <div class="ad-wide-banner-mirror"></div> -->
+<div class="ad-wide-banner">
+<div class='bg'></div>	
+<div data-ad-wrapper="yes" class="" data-load-event-type="onLoad" id="myad-top-homepage-ad" data-ad-parameters='{&#034;pageHeightLimit&#034;: 485, &#034;pageWidthLimit&#034;: 970}'>
+<div id="ad_mod_ab6c8a786" data-src="http://i.cdn.turner.com/ads/tbs/singles/tbs_homepage.js" class="epicAd"></div>
+</div>
+<div data-ad-wrapper="yes" class="ad1x1" data-load-event-type="onLoad" id="myad-top-homepage-ad-2" >
+<div id="ad_mod_81f588687" data-src="http://i.cdn.turner.com/ads/tbs/singles/tbs_homepage_page.js" class="epicAd"></div>
+</div>
+</div>
+<div class="carousel">
+<div class="item">
+<div data-id="main" itemscope itemtype="http://schema.org/TVEpisode" >	
+<span data-id="vars"
+spotLightInd=""
+titleId="2030111"
+isPlayable="true"
+isLink="false"
+devOnly=""
+contentTypeId="701"
+special=""
+avail="Expiring in days">
+</span>
+<p data-id="tile-header"><span itemprop="partOfTVSeries" itemscope itemtype="http://schema.org/TVSeries"><span itemprop="name">GROUND FLOOR</span></span></p>
+<p data-id="tv-rating"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemtype="http://schema.org/TVSeason"><span itemprop="ratingValue">TV-14-DL</span></span></p>
+<p data-id="tile-sub-header"><span itemprop="name">All New Tuesday at 10/9c</span></p>
+<h2 data-id="title"><span itemprop="name">SPACE INVADER</span></h2>
+<img itemprop="thumnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i476/gf-s2e3-712x616-712x616_120920140106.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i476/gf-s2e3-712x616-712x616_120920140106.jpg" alt="Ground Floor" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">2</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">3</span></p>
+<p data-id="descr"><span itemprop="description">When Brody gets his first ground floor paycheck he gets the sticker shock of his life. In an effort to downsize, he gives up his apartment and crashes with Jenny. But when crashing feels a lot like living together, Jenny freaks out. Normally Brody would turn to Mansfield for advice, but his boss has made it clear that this time he is on his own. Harvard and Derrick bet they know how to stretch their modest ground floor pay further than Brody.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">1260</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/ground-floor/season-2/episode-3/space-invader.html" title="Ground Floor">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/ground-floor/season-2/episode-3/space-invader.html" title="Ground Floor Details">More</a>
+</div>	
+</div>
+<div class="item">
+<div data-id="main" itemscope itemtype="http://schema.org/TVEpisode">	
+<span data-id="vars"
+spotLightInd=""
+titleId="2004405"
+isPlayable="true"
+isLink="false"
+devOnly=""
+contentTypeId="701"	
+special=""
+avail="">
+</span>
+<p data-id="tile-header"><span itemprop="name">COUGAR TOWN</span></p>
+<p data-id="tv-rating"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemtype="http://schema.org/TVSeason"><span itemprop="ratingValue">TV-14-DLS</span></span></p>
+<p data-id="tile-sub-header"><span itemprop="name">Watch All of Season Five</span></p>
+<h2 data-id="title"><span itemprop="name">LEARNING TO FLY</span></h2>
+<img itemprop="thumbnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/ct-s5e05-712x400_121820140221.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/ct-s5e05-712x400_121820140221.jpg" alt="Cougar Town" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">5</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">6</span></p>
+<p data-id="descr"><span itemprop="description">Laurie teaches Jules the rules of karma after Jules lies to customers at the annual cul-de-sac yard sale. Andy uses some of his new yard sale purchases to test Ellie after they make a bet that she can&#039;t refrain from being snarky for one day. Meanwhile, Bobby must overcome his fear of roller coasters to fulfill his grandfather&#039;s dying wish.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">1240</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/cougar-town/season-5/episode-6/learning-to-fly.html" title="Cougar Town">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/cougar-town/season-5/episode-6/learning-to-fly.html" title="Cougar Town Details">More</a>
+</div>
+<ul data-id="secondaries" itemscope itemtype="http://schema.org/TVEpisode">
+<li>
+<span data-id="vars"
+spotLightInd=""
+titleId="2004406"
+isPlayable="true"
+isLink="false"
+contentTypeId="701"	
+special=""
+avail="Expiring in days">
+</span>
+<h2 data-id="title"><span itemprop="name">TIME TO MOVE ON</span></h2>
+<img itemprop="thumbnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/ct-s5e06-350x204_121820140223.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/ct-s5e06-350x204_121820140223.jpg" alt="Time to Move On" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">5</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">7</span></p>
+<p data-id="descr"><span itemprop="description">With Travis graduating college in a few months, Jules starts to worry about his job prospects with an art degree. Laurie and Ellie pose as a lesbian couple in a desperate effort to get Stan into a fancy new school. Meanwhile, Andy insists on making a cat video with the guys for Bro-day.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">1241</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/cougar-town/season-5/episode-7/time-to-move-on.html" title="Time to Move On Chicken">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/cougar-town/season-5/episode-7/time-to-move-on.html" title="Time to Move On Details">More</a>
+</li>
+<li>
+<span data-id="vars"
+spotLightInd=""
+titleId="2004407"
+isPlayable="true"
+isLink="false"
+contentTypeId="701"	
+special=""
+avail="Expiring in days">
+</span>
+<h2 data-id="title"><span itemprop="name">MYSTERY OF LOVE</span></h2>
+<img itemprop="thumbnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i479/ct-s5e07-350x204_121820141132.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i479/ct-s5e07-350x204_121820141132.jpg" alt="Cold Justice" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">5</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">8</span></p>
+<p data-id="descr"><span itemprop="description">After Travis and Laurie have Jules and Grayson over for a sophisticated brunch, Jules attempts to prove that she and Grayson are the better couple. Andy plans a beach day for Stan so he will be considered a fun dad. Meanwhile, Tom helps Ellie finish a teen novel she started writing years ago.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">1241</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/cougar-town/season-5/episode-8/mystery-of-love.html" title="Time to Move On">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/cougar-town/season-5/episode-8/mystery-of-love.html" title="Time to Move On Details">More</a>
+</li>
+</ul>
+</div>
+<div class="item">
+<div data-id="main" itemscope itemtype="http://schema.org/TVEpisode">	
+<span data-id="vars"
+spotLightInd=""
+titleId="2006365"
+isPlayable="true"
+isLink="false"
+devOnly=""
+contentTypeId="701"	
+special=""
+avail="">
+</span>
+<p data-id="tile-header"><span itemprop="name">KING OF THE NERDS</span></p>
+<p data-id="tv-rating"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemtype="http://schema.org/TVSeason"><span itemprop="ratingValue">TV-14-DL</span></span></p>
+<p data-id="tile-sub-header"><span itemprop="name">Watch the Whole Second Season</span></p>
+<h2 data-id="title"><span itemprop="name">IN SEARCH OF A KING</span></h2>
+<img itemprop="thumbnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/kotn-s2e1-800x450-712x400_121520141141.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/kotn-s2e1-800x450-712x400_121520141141.jpg" alt="King of the Nerds" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">2</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">1</span></p>
+<p data-id="descr"><span itemprop="description">A new, amazing set of Nerds settle into a bigger and better Nerdvana to compete in the ultimate quest to be crowned King Of The Nerds and win $100,000.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">2488</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/king-of-the-nerds/season-2/episode-1/in-search-of-a-king.html" title="King of the Nerds">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/king-of-the-nerds/season-2/episode-1/in-search-of-a-king.html" title="King of the Nerds Details">More</a>
+</div>
+<ul data-id="secondaries" itemscope itemtype="http://schema.org/TVEpisode">
+<li>
+<span data-id="vars"
+spotLightInd=""
+titleId="2006366"
+isPlayable="true"
+isLink="false"
+contentTypeId="701"	
+special=""
+avail="Expiring in days">
+</span>
+<h2 data-id="title"><span itemprop="name">WEIRD ... SCIENCE?</span></h2>
+<img itemprop="thumbnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/kotn-s2e2-800x450-350x204_121520141141.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/kotn-s2e2-800x450-350x204_121520141141.jpg" alt="Weird ... Science?" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">2</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">2</span></p>
+<p data-id="descr"><span itemprop="description">The Nerds discover their war rooms and put their knowledge of science to the test. But what will guest judges Bill Nye, Mayim Bialik and Blake Marggraff think of their explosive experiments? The game intensifies.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">2489</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/king-of-the-nerds/season-2/episode-2/weird-science.html" title="Weird ... Science? Chicken">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/king-of-the-nerds/season-2/episode-2/weird-science.html" title="Weird ... Science? Details">More</a>
+</li>
+<li>
+<span data-id="vars"
+spotLightInd=""
+titleId="2006367"
+isPlayable="true"
+isLink="false"
+contentTypeId="701"	
+special=""
+avail="Expiring in days">
+</span>
+<h2 data-id="title"><span itemprop="name">TO LARP OR NOT TO LARP</span></h2>
+<img itemprop="thumbnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/kotn-s2e3-800x450-350x204_121520141142.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i478/kotn-s2e3-800x450-350x204_121520141142.jpg" alt="Cold Justice" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">2</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">3</span></p>
+<p data-id="descr"><span itemprop="description">While preparing for the LARP (live-action role play) Nerd War, one nerd&#039;s antics begin to tear his team apart. Can they come together in time to wow guest judges Jon Heder, Yaya Han and Kevin Sorbo? &#034;Mighty Mike&#034; Michael Murga and &#034;Wee Matt&#034; Matt McCarthy guest star.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">2493</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/king-of-the-nerds/season-2/episode-3/to-larp-or-not-to-larp.html" title="Weird ... Science?">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/king-of-the-nerds/season-2/episode-3/to-larp-or-not-to-larp.html" title="Weird ... Science? Details">More</a>
+</li>
+</ul>
+</div>
+<div class="item">
+<div data-id="main" itemscope itemtype="http://schema.org/TVEpisode" >	
+<span data-id="vars"
+spotLightInd=""
+titleId="844903"
+isPlayable="true"
+isLink="false"
+devOnly=""
+contentTypeId="701"
+special=""
+avail="Expiring in days">
+</span>
+<p data-id="tile-header"><span itemprop="partOfTVSeries" itemscope itemtype="http://schema.org/TVSeries"><span itemprop="name">THE BIG BANG THEORY</span></span></p>
+<p data-id="tv-rating"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemtype="http://schema.org/TVSeason"><span itemprop="ratingValue">TV-14-DL</span></span></p>
+<p data-id="tile-sub-header"><span itemprop="name">Watch It Online</span></p>
+<h2 data-id="title"><span itemprop="name">THE PROTON RESURGENCE</span></h2>
+<img itemprop="thumnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i459/bbt-s6e16-712x616_092220140254.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i459/bbt-s6e16-712x616_092220140254.jpg" alt="The Big Bang Theory" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">6</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">22</span></p>
+<p data-id="descr"><span itemprop="description">When Sheldon and Leonard learn their favorite TV scientist is available to hire, they seek to do so. Howard and Bernadette are tasked with watching Raj&#039;s dog.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">1228</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/the-big-bang-theory/season-6/episode-22/the-proton-resurgence.html" title="The Big Bang Theory">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/the-big-bang-theory/season-6/episode-22/the-proton-resurgence.html" title="The Big Bang Theory Details">More</a>
+</div>	
+</div>
+<div class="item">
+<div data-id="main" itemscope itemtype="http://schema.org/TVEpisode" >	
+<span data-id="vars"
+spotLightInd=""
+titleId="1410379"
+isPlayable="true"
+isLink="false"
+devOnly=""
+contentTypeId="37"
+special=""
+avail="Expiring in days">
+</span>
+<p data-id="tile-header"><span itemprop="partOfTVSeries" itemscope itemtype="http://schema.org/TVSeries"><span itemprop="name">COUGAR TOWN</span></span></p>
+<p data-id="tv-rating"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemtype="http://schema.org/TVSeason"><span itemprop="ratingValue"></span></span></p>
+<p data-id="tile-sub-header"><span itemprop="name">Returning Tuesday, Jan. 6 at 10:30/9:30c</span></p>
+<h2 data-id="title"><span itemprop="name">ONE MORE SEASON</span></h2>
+<img itemprop="thumnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i470/ct_s6_musicvideo-712x616_110620140322.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i470/ct_s6_musicvideo-712x616_110620140322.jpg" alt="Cougar Town" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber"></span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber"></span></p>
+<p data-id="descr"><span itemprop="description">Cougar Town is back for a sixth and final season, starting Tuesday, Jan. 6 at 10:30/9:30c!</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">174</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/cougar-town/season-1/extras/1410379/one-more-season.html" title="Cougar Town">Play</a>
+<a itemprop="url" data-id="info-href" href="/videos/cougar-town/season-1/extras/1410379/one-more-season.html" title="Cougar Town Details">More</a>
+</div>	
+</div>
+<div class="item">
+<div data-id="main" itemscope itemtype="http://schema.org/TVEpisode" >	
+<span data-id="vars"
+spotLightInd=""
+titleId="1390086"
+isPlayable="true"
+isLink="false"
+devOnly=""
+contentTypeId="37"
+special=""
+avail="Expiring in days">
+</span>
+<p data-id="tile-header"><span itemprop="partOfTVSeries" itemscope itemtype="http://schema.org/TVSeries"><span itemprop="name">KING OF THE NERDS</span></span></p>
+<p data-id="tv-rating"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemtype="http://schema.org/TVSeason"><span itemprop="ratingValue"></span></span></p>
+<p data-id="tile-sub-header"><span itemprop="name">Watch the Nerd Rap</span></p>
+<h2 data-id="title"><span itemprop="name">RETURN OF THE NERDS RAP</span></h2>
+<img itemprop="thumnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i463/kotn-s3-nerd-rap-712x616-712x616_100920140224.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i463/kotn-s3-nerd-rap-712x616-712x616_100920140224.jpg" alt="King of the Nerds" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber"></span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber"></span></p>
+<p data-id="descr"><span itemprop="description">Curtis, Robert and the newest Nerds use their lyrical skills to break down what to expect during Season 3.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">83</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/king-of-the-nerds/season-1/extras/1390086/return-of-the-nerds-rap.html" title="King of the Nerds">Play</a>
+<a itemprop="url" data-id="info-href" href="/videos/king-of-the-nerds/season-1/extras/1390086/return-of-the-nerds-rap.html" title="King of the Nerds Details">More</a>
+</div>	
+</div>
+<div class="item">
+<div data-id="main" itemscope itemtype="http://schema.org/TVEpisode" >	
+<span data-id="vars"
+spotLightInd=""
+titleId="1422889"
+isPlayable="true"
+isLink="false"
+devOnly=""
+contentTypeId="973"
+special=""
+avail="Expiring in days">
+</span>
+<p data-id="tile-header"><span itemprop="partOfTVSeries" itemscope itemtype="http://schema.org/TVSeries"><span itemprop="name">A CHRISTMAS STORY</span></span></p>
+<p data-id="tv-rating"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemtype="http://schema.org/TVSeason"><span itemprop="ratingValue"></span></span></p>
+<p data-id="tile-sub-header"><span itemprop="name">Watch it Online</span></p>
+<h2 data-id="title"><span itemprop="name">A CHRISTMAS STORY</span></h2>
+<img itemprop="thumnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i474/tbs-movie-christmas-story-1600x900-712x616_112420140332.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i474/tbs-movie-christmas-story-1600x900-712x616_112420140332.jpg" alt="A Christmas Story" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber"></span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber"></span></p>
+<p data-id="descr"><span itemprop="description">In the 1940s, in the town of Hammond, 9-year-old Ralphie wants one thing for Christmas -- an official Red Ryder BB rifle. When he asks his mother for the BB gun for Christmas, she says, &#034;No, you&#039;ll shoot your eye out.&#034; When he writes an essay about it at school, his teacher gives him a C+ with a note saying, &#034;You&#039;ll shoot your eye out.&#034; Next he asks Santa for the gun. Santa&#039;s response is familiar; he says, &#034;You&#039;ll shoot your eye out, kid.&#034; Ralph fears that he&#039;ll never get the BB gun for Christmas. But there might be a surprise in store for him.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">5334</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/movies/a-christmas-story.html" title="A Christmas Story">Play</a>
+<a itemprop="url" data-id="info-href" href="/movies/a-christmas-story.html" title="A Christmas Story Details">More</a>
+</div>	
+</div>
+<div class="item">
+<div data-id="main" itemscope itemtype="http://schema.org/TVEpisode" >	
+<span data-id="vars"
+spotLightInd=""
+titleId="2031241"
+isPlayable="true"
+isLink="false"
+devOnly=""
+contentTypeId="701"
+special=""
+avail="Expiring in days">
+</span>
+<p data-id="tile-header"><span itemprop="partOfTVSeries" itemscope itemtype="http://schema.org/TVSeries"><span itemprop="name">DEAL WITH IT</span></span></p>
+<p data-id="tv-rating"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemtype="http://schema.org/TVSeason"><span itemprop="ratingValue">TV-14-DL</span></span></p>
+<p data-id="tile-sub-header"><span itemprop="name">Watch the Whole Season Online</span></p>
+<h2 data-id="title"><span itemprop="name">HAPPY HOWIE-WEEN WITH ROSS MATHEWS AND BOBBY LEE</span></h2>
+<img itemprop="thumnail" data-id="img" data-standard="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i464/dwi-214-ross-matthews-712x616-712x616_101420141128.jpg" data-retina="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i464/dwi-214-ross-matthews-712x616-712x616_101420141128.jpg" alt="Deal With It" width="0" height="0"/>
+<p data-id="season"><span itemprop="partOfSeason" itemscope itemtype="http://schema.org/TVSeason"><span itemprop="seasonNumber">2</span></span></p>
+<p data-id="ep"><span itemprop="episodeNumber">14</span></p>
+<p data-id="descr"><span itemprop="description">FOOTBALL: This contestant has football on the brain and decides to kick off the new season while her friend watches from the sideline. Co-host: Bobby Lee. CHAMPAGNE PROBLEMS: After faking a foot injury, a contestant enlists the help of a friend, then offers a thank you with a face full of foot. Co-host: Ross Mathews.</span></p>
+<p data-id="duration"><span itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="duration">1230</span></span></p>
+<a itemprop="url" data-id="video-href" href="/videos/deal-with-it/season-2/episode-14/happy-howie-ween-with-ross-mathews-and-bobby-lee.html" title="Deal With It">Play</a>
+<a itemprop="url" data-id="info-href" href="/shows/deal-with-it/season-2/episode-14/happy-howie-ween-with-ross-mathews-and-bobby-lee.html" title="Deal With It Details">More</a>
+</div>	
+</div>
+</div>
+</div><!-- end of div.page -->	
+</div>
+<!-- /wrap -->
+<div class="shadow-top shadowbox"></div>
+<div class="shadow-left shadowbox"></div>
+<div class="shadow-right shadowbox"></div>
+<footer data-component="footer">
+<div id="video-controls" itemscope itemtype="http://schema.org/VideoObject" itemprop="video">
+<ul class="nav nav-pills">
+<li id="watchlistbut"><a class="toggle-watchlist" href="#">Watchlist</a></li>
+<li id="browse-but"><a class="toggle-fullscreen" href="http://www.youtube.com/watch?v=kv3mLRo8Xaw">Browse</a></li>
+<li>
+<a itmeprop="url" id="play-but" class="largeIcon control play-but" href="#">
+<span class="glyphicon glyphicon-play">
+</a>
+<a itemprop="url" id="pause-but" class="largeIcon control" href="#" style="display:none;">
+<span class="glyphicon glyphicon-pause">
+</a>
+</li>
+<!--
+<li>
+<input id="playtime" type="text" value="0:00 / 0:00" />
+</li>
+-->
+<!-- <li><a class="largeIcon" href="#"><span class="glyphicon glyphicon-stop white"></a></li></li> -->
+<li class="wide">
+<div class="video-meta">
+<div class="playtime" itemprop="duration"><span id="done">0:00:00</span> - <span id="togo">0:00:00</span></div>
+<div class="title" itemprop="name"><span></span></div>
+<div class="wrapper">
+<div class="season" itemprop="season"><span></span></div>
+<div class="ep" itemprop="episode"><span></span></div>
+</div>
+<div class="upnextvideo"></div>
+</div>
+<div id="time-slider" class="progress">
+<div class="time-slider-handle"></div>
+<div id="time-slider-but" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+<span class="sr-only">0% Complete</span>
+</div>
+</div>
+</li>
+<li>
+<a itemprop="url" id="quickSeekBack" class="largeIcon pull-right control" href="#">
+<i class="fa fa-undo"></i>
+</a>
+</li>
+<li class="volume">
+<div id="video-volume-slider" class="volume-wrapper">
+<div class="slider-wrapper">
+<input id="video-volume-input" type="text">
+</div>
+<div itemprop="url" id="volume-but" class="largeIcon pull-right control" href="#">
+<span class="glyphicon glyphicon-volume-up"></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="legal">
+<ul>
+<li class="copy">TM &amp; &copy; 2014 Turner Broadcasting System, Inc. A Time Warner Company. All Rights Reserved. TBS.com is a part of Turner Entertainment Digital which is a part of Turner Sports and Entertainment Digital Network.</li>
+<li><a href="/privacy.html">Privacy Policy</a></li>
+<li><a href="/terms.html">Terms of Use</a></li>
+<li><a href="/dvs-offerings.html">DVS Offerings</a></li>
+<li><a href="/closed-captioning.html">Closed Captioning</a></li>
+<li><a id="tnt_adchoices" ><script type="text/javascript" src="//consent.truste.com/notice?domain=turner.com&c=tnt_adchoices&text=true&country=us"></script></a> <img src="http://i.cdn.turner.com/cnn/.element/img/3.0/global/misc/logo_ad_choices_footer.png" border="0" alt="Ad Choices" valign="middle"></li>
+</ul>
+</div>
+<script type="text/javascript"> 
+var turner_metadata = { 
+"url_section": "/index", 
+"section": "home",
+"subsection": "home:main",
+"template_type": "adbp:index" ,
+"content_type": "other:static",
+"search.keyword": "",
+"search.number_results":"" ,
+"friendly_name": "home page",
+"series_name":""
+}; 
+</script>
+</footer>
+<script type="text/javascript" language="javascript" src='/js/libs/jquery-1.10.2.min.js'></script>
+<script type="text/javascript" language="javascript" src='/js/libs/jquery.history-1.8B2.js'></script>
+<script type="text/javascript" language="javascript" src="/bootstrap.js"></script>
+<script type="text/javascript" language="javascript" src="/iscroll.js"></script>
+<script type="text/javascript" language="javascript" src="/jquery.easing.js"></script>
+<script type="text/javascript" language="javascript" src="/jquery.dotdotdot.js"></script>
+<script type="text/javascript" language="javascript" src="/jquery.md5.js"></script>
+<script type="text/javascript" language="javascript" src="/moment.min.js"></script>
+<script type="text/javascript" language="javascript" src="/toastr-2.0.1.js"></script>
+<script type="text/javascript" language="javascript" src="/jstz.min.js"></script>
+<script src='http://z.cdn.turner.com/xslo/cvp/js/cvp/2.8.2.5/cvp.min.js'></script>
+<script src='http://z.cdn.turner.com/xslo/cvp/js/cvp.auth/cvp.auth_2.2.0.js'></script>
+<link rel="stylesheet" href="http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/picker.css">
+<script type="text/javascript" src="http://i.cdn.turner.com/analytics/tbs_responsive/DPIPicker.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://i.cdn.turner.com/analytics/tbs_responsive/jsmd-prod.js"></script> 
+<script type="text/javascript"> 
+var pageURL = window.location.pathname; 
+if(pageURL.indexOf("/.element/ssi/ads.iframes/") == -1 && pageURL.indexOf("/doubleclick/dartiframe.html") == -1) { 
+try{
+var jsmd=_jsmd.init(); 
+jsmd.send(); 
+} catch(e){
+console.log("jsmd did not init or send correctly");
+console.log(e);
+}
+}
+</script>
+<script src='/js/simple-slider.js'></script>
+<script src='/js/historyHelper.js'></script>
+<script src='/js/adHelper.js'></script>
+<script src='/js/resizer.js'></script>
+<script src='/js/global.js'></script>
+<script src='/js/Tn.js'></script>
+<script src='/js/Users.js'></script>
+<script src='/js/framework.js'></script>
+<script src='/js/overlays.js'></script>
+<script src='/js/pagecarousels.js'></script>
+<script src='/js/Player.js'></script>
+<script src='/js/shows.js'></script>
+<script src='/js/schedule.js'></script>
+<script src='/js/home.js'></script>
+<script src='/js/movies.js'></script>
+<script src='/js/livetv.js'></script>
+<script src='/js/search.js'></script>
+<script src='/js/print.js'></script>
+<script src='/js/site-switcher.js'></script>
+<script src="/360player.js"></script>
 </body>
 </html>
-
