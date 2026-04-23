@@ -1,0 +1,38 @@
+[
+  {
+    "channel": "tbs East",
+    "title": "Family Guy",
+    "name": "Chris Cross",
+    "titleId": "1020219",
+    "upNext": "The King of Queens",
+    "upNextStartTime": "2:30 PM",
+    "upNextStartTimeLong": "2015-02-10 14:30:00",
+    "upNextRating": "TV-PG",
+    "seasonNum": "11",
+    "epNum": "Chris Cross",
+    "subText": "Season 11 | Episode 'Chris Cross' TV-14 -DLSV",
+    "programType": "E",
+    "franchiseId": "402712",
+    "location": "eastern",
+    "image": "https://i.cdn.turner.com/v5cache/TBS/Dynamic/i334/tbs-live-default-logo-640x360-300x170_053020130549.png",
+    "href": "#"
+  },
+  {
+    "channel": "tbs West",
+    "title": "My Best Friend's Girl",
+    "name": "Movie",
+    "titleId": "1020220",
+    "upNext": "Phineas And Ferb",
+    "upNextStartTime": "null:null null",
+    "upNextStartTimeLong": "2021-02-10 14:30:00",
+    "upNextRating": "TV-Y7",
+    "seasonNum": "1",
+    "epNum": "1",
+    "subText": "Rollercoaster",
+    "programType": "E",
+    "franchiseId": "654654",
+    "location": "pacific",
+    "image": "https://i.cdn.turner.com/v5cache/TBS/Dynamic/i334/tbs-live-default-logo-640x360-300x170_053020130549.png",
+    "href": "#"
+  }
+]
