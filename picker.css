@@ -95,7 +95,7 @@
 	margin: 8px 4px 4px 4px;
 	border: 0;
 	padding: 0;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_close.png') 0 0 no-repeat;
+	background: url('button_close.png') 0 0 no-repeat;
 	cursor: pointer;
 }
 
@@ -107,7 +107,7 @@
 	margin: 8px 4px 4px 4px;
 	border: 0;
 	padding: 0;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_help.png') 0 0 no-repeat;
+	background: url('button_help.png') 0 0 no-repeat;
 	cursor: pointer;
 }
 
@@ -118,7 +118,7 @@
 	margin: 0;
 	border: 0;
 	padding: 0;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/title.png') center no-repeat;
+	background: url('title.png') center no-repeat;
 }
 
 #mvpdpicker a[href] {
@@ -140,7 +140,7 @@
 	margin: 0 auto;
 	border: 0;
 	padding: 0;
-	background: #fafafa url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/steps_1.png') center no-repeat;
+	background: #fafafa url('steps_1.png') center no-repeat;
 }
 
 /* Alter the "steps" background-image based on the state of the picker. */
@@ -148,17 +148,17 @@
 #mvpdpicker.state-mvpdlogo .steps,
 #mvpdpicker.state-mvpdlist .steps,
 #mvpdpicker.state-notfound .steps {
-	background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/steps_1.png');
+	background-image: url('steps_1.png');
 }
 
 #mvpdpicker.state-remember .steps,
 #mvpdpicker.state-signin .steps,
 #mvpdpicker.state-error  .steps {
-	background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/steps_2.png');
+	background-image: url('steps_2.png');
 }
 
 #mvpdpicker.state-success .steps {
-	background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/steps_3.png');
+	background-image: url('steps_3.png');
 }
 
 /* hide steps from welcome slate */
@@ -175,7 +175,7 @@
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 17px;
 	color: #41424e;
-	background: #fefefe url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/slate_blank.png') center no-repeat;
+	background: #fefefe url('slate_blank.png') center no-repeat;
 }
 
 /* Alter the "slate area" background-image based on the state of the picker. */
@@ -183,28 +183,28 @@
 #mvpdpicker.state-remember .slates,
 #mvpdpicker.state-mvpdlogo .slates,
 #mvpdpicker.state-mvpdlist .slates {
-	background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/slate_footer.png');
+	background-image: url('slate_footer.png');
 }
 
 #mvpdpicker.state-notfound .slates {
-	background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/slate_noprovider.png');
+	background-image: url('slate_noprovider.png');
 }
 
 #mvpdpicker.state-signin .slates {
-	/*background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/slate_signin.png');*/
+	/*background-image: url('slate_signin.png');*/
 }
 
 #mvpdpicker.state-error  .slates {
-	background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/slate_error.png');
+	background-image: url('slate_error.png');
 }
 
 #mvpdpicker.state-success .slates {
-	background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/slate_success.png');
+	background-image: url('slate_success.png');
 }
 
 /* hide steps from welcome slate, take up missing space */
 #mvpdpicker.state-welcome .slates {
-	background-image: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/slate_welcome.png');
+	background-image: url('slate_welcome.png');
 	height: 584px;
 }
 
@@ -264,7 +264,7 @@
 	height: 51px;
 	position: relative;
 	top: 450px;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_getstarted.png') center no-repeat;
+	background: url('button_getstarted.png') center no-repeat;
 }
 
 
@@ -293,14 +293,14 @@
 	width: 196px;
 	height: 52px;
 	margin: 14px 40px 0;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_notmyprovider.png') center no-repeat;
+	background: url('button_notmyprovider.png') center no-repeat;
 }
 
 #mvpdpicker .rememberedokbutton {
 	width: 196px;
 	height: 52px;
 	margin: 14px 40px 0;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_continue.png') center no-repeat;
+	background: url('button_continue.png') center no-repeat;
 }
 
 
@@ -346,7 +346,7 @@
 	width: 338px;
 	height: 52px;
 	margin: 14px 40px 0;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_viewall.png') center no-repeat;
+	background: url('button_viewall.png') center no-repeat;
 }
 
 
@@ -366,7 +366,7 @@
 	border: 1px solid #ccc;
 	/*border-radius: 11px;*/
 	box-shadow: inset 0 1px 2px #000;
-	background: #ececed url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/search.png') 0.5em center no-repeat;
+	background: #ececed url('search.png') 0.5em center no-repeat;
 	text-align: left;
 }
 
@@ -436,27 +436,27 @@
 	width: 338px;
 	height: 52px;
 	margin: 14px 20px 0 0;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_viewtop.png') center no-repeat;
+	background: url('button_viewtop.png') center no-repeat;
 }
 
 #mvpdpicker .dontseebutton {
 	width: 338px;
 	height: 52px;
 	margin: 14px 20px 0 0;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_dontsee.png') center no-repeat;
+	background: url('button_dontsee.png') center no-repeat;
 }
 
 
 #mvpdpicker .okbutton {
 	width: 76px;
 	height: 40px;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_ok.png') center no-repeat;
+	background: url('button_ok.png') center no-repeat;
 }
 
 #mvpdpicker .cancelbutton {
 	width: 88px;
 	height: 40px;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_cancel.png') center no-repeat;
+	background: url('button_cancel.png') center no-repeat;
 }
 
 
@@ -509,7 +509,7 @@
 	display: inline-block;
 	width: 103px;
 	height: 103px;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/spinner.png') center no-repeat;
+	background: url('spinner.png') center no-repeat;
 }
 
 #mvpdpicker.state-signin .spinner {
@@ -571,7 +571,7 @@
 	height: 64px;
 	position: relative;
 	top: 313px;
-	background: url('/web/20141231213313im_/http://i.cdn.turner.com/xslo/cvp/assets/picker/2.2/img/button_watchnow.png') center no-repeat;
+	background: url('button_watchnow.png') center no-repeat;
 }
 
 

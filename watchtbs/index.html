@@ -103,8 +103,8 @@ enabledProviders: 'facebook,twitter,googleplus,google,linkedin,yahoo,microsoft,a
 <script src="https://i.cdn.turner.com/v5cache/TBS/html5shiv.js"></script>
 <script src="/respond.js"></script>
 <![endif]-->
-<script type="text/javascript" src='https://i.cdn.turner.com/analytics/tbs/ais.js'></script>
-<script type="text/javascript" src='https://i.cdn.turner.com/ads/tbs/adfuel.js'></script>
+<script type="text/javascript" src='/ais.js'></script>
+<script type="text/javascript" src='/adfuel.js'></script>
 <script>
 /* Snippets in ad_controller reused here since they are used in our code */
 var viewport_width = window.innerWidth || document.documentElement.offsetWidth || document.documentElement.clientWidth || document.body.clientWidth,
@@ -321,17 +321,17 @@ END OF HEADER COMPONENT
 <span id="headerAds">
 <div class="banner_ad shows_top">
 <div data-ad-wrapper="yes" class="" data-load-event-type="onLoad" id="myad-top-shows-ad" >
-<div id="ad_mod_2a4db4c88" data-src="https://i.cdn.turner.com/ads/tbs/singles/tbs_shows_main.js" class="epicAd"></div>
+<div id="ad_mod_2a4db4c88" data-src="/singles/tbs_shows_main.js" class="epicAd"></div>
 </div>
 </div>
 <div class="banner_ad schedule_top">
 <div data-ad-wrapper="yes" class="" data-load-event-type="onLoad" id="myad-top-shows-ad" >
-<div id="ad_mod_7584803aa" data-src="https://i.cdn.turner.com/ads/tbs/singles/tbs_schedule.js" class="epicAd"></div>
+<div id="ad_mod_7584803aa" data-src="/singles/tbs_schedule.js" class="epicAd"></div>
 </div>
 </div>
 <div class="banner_ad home_top">
 <div data-ad-wrapper="yes" class="" data-load-event-type="onLoad" id="myad-top-home-ad" >
-<div id="ad_mod_91c2ae5ba" data-src="https://i.cdn.turner.com/ads/tbs/singles/tbs_homepage_mobile.js" class="epicAd"></div>
+<div id="ad_mod_91c2ae5ba" data-src="/singles/tbs_homepage_mobile.js" class="epicAd"></div>
 </div>
 </div>
 </span>
@@ -340,7 +340,53 @@ div#page-xxxxx is the div where the content should be loaded into
 this id is unique per page
 -->
 <div class="page maincarousel carousel-loading" id="page-livetv">
-<div class="carousel"></div>
+<div class="carousel">
+<div class="item" itemscope itemtype="https://schema.org/TVEpisode">
+<span data-id="vars"
+name="Chris Cross"
+titleId="1020219"
+isNew=""
+upNext="The King of Queens"
+upNextStartTime="2:30 PM"
+upNextStartTimeLong="2015-02-10 14:30:00"
+upNextRating="TV-PG"
+seasonNum="11"
+epNum="Chris Cross"
+subText="Season 11 | Episode &#039;Chris Cross&#039; TV-14 -DLSV"
+programType="E"
+franchiseId="402712"
+location="eastern"
+>
+</span>
+<h3 data-id="tile-header"><span itemprop="name">tbs East</span></h3>
+<h2 data-id="title"><span itemprop="name">Family Guy</span></h2>
+<!-- <img itemprop="thumbnail" data-id="img" data-standard="https://i.cdn.turner.com/v5cache/TBS/i334/tbs-live-default-logo-640x360-300x170_053020130549.png" data-retina="https://i.cdn.turner.com/v5cache/TBS/i334/tbs-live-default-logo-640x360-300x170_053020130549.png" alt="Family Guy" width="0" height="0"/>-->
+<img itemprop="thumbnail" data-id="img" data-standard="/tbs-live-default-logo-640x360-300x170_053020130549.png" data-retina="/tbs-live-default-logo-640x360-300x170_053020130549.png" alt="Family Guy" width="0" height="0"/>
+<a itemprop="url" data-id="video-href" href="#" title="Play Family Guy">Play</a>
+</div>
+<div class="item" itemscope itemtype="https://schema.org">
+<span data-id="vars"
+name="Movie"
+titleId="1020220"
+isNew=""
+upNext="The One About Friends"
+upNextStartTime="2:30 PM"
+upNextStartTimeLong="2015-02-10 14:30:00"
+upNextRating="TV-14-DLV"
+seasonNum=""
+epNum="Movie"
+subText="Season | Episode &#039;Movie&#039; TV-14-DLS"
+programType="EA"
+franchiseId="321362"
+location="pacific"
+>
+</span>
+<h3 data-id="tile-header">tbs West</h3>
+<h2 data-id="title"><span itemprop="name">My Best Friend&#039;s Girl</span></h2>
+<img itemprop="thumbnail" data-id="img" data-standard="/tbs-live-default-logo-640x360-300x170_053020130549.png" data-retina="/tbs-live-default-logo-640x360-300x170_053020130549.png" alt="My Best Friend&#039;s Girl" width="0" height="0"/>
+<a itemprop="url" data-id="video-href" href="#" title="Play My Best Friend&#039;s Girl">Play</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -485,57 +531,6 @@ var ssidEast = 'tbs.com_desktop_live_east';
 var ssidWest = 'tbs.com_desktop_live_west';
 var videoFeedEast = '1020219';
 var videoFeedWest = '1020220';
-</script>
-<script>
-fetch("/data.json")
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById("carousel");
-
-    data.forEach(item => {
-      const div = document.createElement("div");
-      div.className = "item";
-      div.setAttribute("itemscope", "");
-      div.setAttribute("itemtype", "https://schema.org/TVEpisode");
-
-      div.innerHTML = `
-        <span data-id="vars"
-          name="${item.name}"
-          titleId="${item.titleId}"
-          upNext="${item.upNext}"
-          upNextStartTime="${item.upNextStartTime}"
-          upNextStartTimeLong="${item.upNextStartTimeLong}"
-          upNextRating="${item.upNextRating}"
-          seasonNum="${item.seasonNum}"
-          epNum="${item.epNum}"
-          subText="${item.subText}"
-          programType="${item.programType}"
-          franchiseId="${item.franchiseId}"
-          location="${item.location}">
-        </span>
-
-        <h3 data-id="tile-header">
-          <span itemprop="name">${item.channel}</span>
-        </h3>
-
-        <h2 data-id="title">
-          <span itemprop="name">${item.title}</span>
-        </h2>
-
-        <img itemprop="thumbnail"
-          src="${item.image}"
-          alt="${item.title}">
-
-        <a itemprop="url"
-          href="${item.href}"
-          title="Play ${item.title}">
-          Play
-        </a>
-      `;
-
-      container.appendChild(div);
-    });
-  });
 </script>
 </body>
 </html>

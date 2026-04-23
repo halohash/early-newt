@@ -346,9 +346,9 @@ function getParameterByName(name) {
             if (currentTime - embed360Video.redirectTimer < 4000){
             
                 if(window.tnVars.isIOS() ){
-                    window.location = "https://web.archive.org/web/20141231173000/https://itunes.apple.com/us/app/im360/id437314677?mt=8";
+                    window.location = "https://itunes.apple.com/us/app/im360/id437314677?mt=8";
                 } else if(window.tnVars.isAndroid){
-                    window.location.href = "https://web.archive.org/web/20141231173000/https://play.google.com/store/apps/details?id=com.immersivemedia.android";
+                    window.location.href = "https://play.google.com/store/apps/details?id=com.immersivemedia.android";
                 } else {
                     window.Tn.alert("Your platform is currently not supported.");
                 }
